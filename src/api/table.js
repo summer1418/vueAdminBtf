@@ -1,11 +1,15 @@
 import request from "@/utils/request";
 
 export function getList(data) {
-  return request({
+  const mockData = request({
     url: "/table/getList",
     method: "post",
     data,
   });
+  mockData.then((value) => {
+    console.log(value);
+  });
+  return mockData;
 }
 
 export function doEdit(data) {

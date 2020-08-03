@@ -30,6 +30,25 @@
           <span v-else>{{ row.title }}</span>
         </template>
       </el-table-column>
+      <el-table-column show-overflow-tooltip min-width="300px" label="开关">
+        <template slot-scope="{ row }">
+          <template v-if="row.edit">
+            <el-switch
+              v-model="row.switch"
+              active-color="#13ce66"
+              inactive-color="#ff4949"
+            ></el-switch>
+          </template>
+          <template v-else>
+            <el-switch
+              v-model="row.switch"
+              active-color="#13ce66"
+              inactive-color="#ff4949"
+              disabled
+            ></el-switch>
+          </template>
+        </template>
+      </el-table-column>
       <el-table-column
         show-overflow-tooltip
         label="作者"

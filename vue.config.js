@@ -62,6 +62,24 @@ module.exports = {
       errors: true,
     },
     after: mockServer(),
+    // proxy: {
+    //   "/zn": {
+    //     target: "http://126.109.0.7:332/",
+    //     changeOrigin: true,
+    //     wx: true,
+    //     pathRewrite: {
+    //       "^/zn": "/zhangning/study/vueAdmin/",
+    //     },
+    //   },
+    //   "/zx": {
+    //     target: "http://126.109.0.7:332/",
+    //     changeOrigin: true,
+    //     wx: true,
+    //     pathRewrite: {
+    //       "^/zx": "/zhangning/study/vueAdmin/",
+    //     },
+    //   },
+    // },
   },
   configureWebpack() {
     return {
