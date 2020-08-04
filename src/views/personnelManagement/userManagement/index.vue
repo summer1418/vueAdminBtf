@@ -99,6 +99,7 @@
     components: { Edit },
     data() {
       return {
+        datae: "",
         list: null,
         listLoading: true,
         layout: "total, sizes, prev, pager, next, jumper",
